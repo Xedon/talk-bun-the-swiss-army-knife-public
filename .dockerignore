@@ -1,0 +1,7 @@
+**/node_modules
+slideAssets/
+slides.html
+.env
+**/dist/
+**/cdk*
+

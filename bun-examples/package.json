@@ -1,0 +1,9 @@
+{
+  "name": "bun-test",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.3.0"
+  }
+}

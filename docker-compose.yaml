@@ -1,0 +1,32 @@
+version: "3"
+services:
+  nodejs:
+    build:
+      context: .
+      dockerfile: nodejs.dockerfile
+    ports:
+      - "127.100.0.1:3000:3000"
+  nodejs-bundle:
+    build:
+      context: .
+      dockerfile: nodejs-bundle.dockerfile
+    ports:
+      - "127.100.0.2:3000:3000"
+  bun:
+    build:
+      context: .
+      dockerfile: bun.dockerfile
+    ports:
+      - "127.100.0.3:3000:3000"
+  bun-bundle:
+    build:
+      context: .
+      dockerfile: bun-bundle.dockerfile
+    ports:
+      - "127.100.0.4:3000:3000"
+  sf-bun:
+    build:
+      context: .
+      dockerfile: sf-bun.dockerfile
+    ports:
+      - "127.100.0.5:3000:3000"
